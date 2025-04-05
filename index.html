@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensure proper mobile scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Glyph Field</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Canvas element for drawing the glyph field -->
     <canvas id="glyphCanvas"></canvas>
-    <div id="hint">Hold cursor still to reveal...</div>
+
+    <!-- Hint text displayed to the user -->
+    <div id="hint">Hold still to reveal...</div>
+
+    <!-- Container for theme & glyph switcher controls -->
+    <div id="switcherContainer"></div>
+
+    <!-- Main application script -->
     <script src="script.js"></script>
 </body>
 </html>
